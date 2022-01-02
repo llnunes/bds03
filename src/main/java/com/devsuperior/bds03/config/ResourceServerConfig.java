@@ -25,8 +25,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 	
 	private static final String[] OPERATOR_GET = { "/departments/**", "/employees/**" };
 	
-	private static final String[] ADMIN = { "/users/**" };	
-	
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		resources.tokenStore(tokenStore);
